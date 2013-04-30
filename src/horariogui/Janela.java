@@ -146,7 +146,7 @@ public class Janela extends JFrame {
  
  
         
-        // menu DELEGAÇÃO*******************************************************************************************************************************************************************************************************************************
+        // menu EDITAR*******************************************************************************************************************************************************************************************************************************
         menu = new JMenu("Editar");
         menu.setMnemonic('E');
         menuBar.add(menu);
@@ -162,7 +162,7 @@ public class Janela extends JFrame {
         // menuItens EDITAR Celula
         menuItem = new JMenuItem("Editar Celula",'E');
         menuItem.setAccelerator(KeyStroke.getKeyStroke("ctrl E"));
-        // actionListener para editar DELEGAÇÃO
+        // actionListener para editar CELULA
        /* menuItem.addActionListener(new ActionListener(){
          
         });*/
@@ -335,7 +335,7 @@ public class Janela extends JFrame {
     // método para confirmar fechar da aplicação
     private void fechar(){
         Object opSimNao[] = {"Sim","Não"};
-        if(JOptionPane.showOptionDialog(Janela.this,"Deseja sair da aplicação?","Gestão de Medalhas Olímpicas",JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE,null,opSimNao,opSimNao[1])==0)
+        if(JOptionPane.showOptionDialog(Janela.this,"Deseja sair da aplicação?","Gestão de Horários",JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE,null,opSimNao,opSimNao[1])==0)
      //       Main.gravarEstado();
             dispose();       
     }
